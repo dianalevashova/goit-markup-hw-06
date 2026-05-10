@@ -1,0 +1,138 @@
+.footer {
+  padding: 96px 0;
+  background-color: #2e2f42;
+  @media screen and (min-width: 1158px) {
+    padding: 100px 0;
+  }
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 72px 24px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1157px) {
+    padding: 0 108px;
+  }
+  @media screen and (min-width: 1158px) {
+    gap: 0px;
+  }
+}
+.footer-left-block {
+  @media screen and (min-width: 768px) {
+    width: 264px;
+  }
+  @media screen and (min-width: 1158px) {
+    width: 264px;
+    margin-right: 120px;
+  }
+}
+.footer-text {
+  width: 264px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+.footer-text-social {
+  color: #ffffff;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1158px) {
+    margin-right: 83px;
+  }
+}
+
+.footer-subscribe-text {
+  margin-bottom: 16px;
+  color: #ffffff;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+.subscribe-label {
+  width: 100%;
+}
+.subscribe-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  outline: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    width: 264px;
+  }
+  &:focus {
+    border-color: #31d0aa;
+  }
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+.subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    width: 165px;
+  }
+  &:hover,
+  &:focus {
+    background-color: #31d0aa;
+  }
+}
+
+.subscribe-icon {
+  margin-left: 16px;
+  fill: #ffffff;
+}

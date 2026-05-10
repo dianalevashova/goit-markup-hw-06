@@ -1,0 +1,33 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3333;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+  text-transform: uppercase;
+}
+
+.header .logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 120px;
+  }
+  @media screen and (min-width: 1158px) {
+    margin-right: 76px;
+  }
+}
+
+.logo-web {
+  color: #2e2f42;
+}
+.logo-footer {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+.logo-footer-span {
+  color: #f4f4fd;
+}
